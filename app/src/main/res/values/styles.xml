@@ -4,8 +4,24 @@
         <!-- Customize your theme here. -->
         <!--<item name="colorPrimary">@color/colorPrimary</item>-->
         <item name="colorPrimaryDark">@color/mainColor</item>
+        <item name="android:statusBarColor">@color/mainColor</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
         <!--<item name="colorAccent">@color/colorAccent</item>-->
     </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <!--activity动画状态-->
+        <!--activity启动时，新进入的动画-->
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+        <!--activity启动时，原退出的动画-->
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <!--activity退出时，原退出的动画-->
+        <item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+        <!--activity启动时，重新显示的动画-->
+        <item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+
+    </style>
+
 
     <!--分割线样式-->
     <style name="line">

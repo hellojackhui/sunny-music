@@ -30,8 +30,9 @@ public class LoginActivity extends BaseActivity{
     }
 
     // 注册事件
-    private void onRegisterClick(View v) {
-
+    public void onRegisterClick(View v) {
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
     }
 
     public void onCommitClick(View v) {

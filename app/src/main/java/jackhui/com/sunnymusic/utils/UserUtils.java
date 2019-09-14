@@ -24,4 +24,25 @@ public class UserUtils {
         }
         return true;
     }
+
+    public static boolean validateRegister(Context context, String phone, String password, String confirm) {
+        if (!RegexUtils.isMobileExact(phone)) {
+            Toast.makeText(context, "无效手机号", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (TextUtils.isEmpty(password)) {
+            Toast.makeText(context, "请输入密码", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (TextUtils.isEmpty(confirm)) {
+            Toast.makeText(context, "请再次输入密码", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (!password.equals(confirm)) {
+            Toast.makeText(context, "密码不一致", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
+    }
+
 }
