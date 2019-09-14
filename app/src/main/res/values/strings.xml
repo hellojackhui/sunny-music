@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">sunnyMusic</string>
+    <string name="user">用户名：</string>
+    <string name="change_pwd">修改密码</string>
 </resources>

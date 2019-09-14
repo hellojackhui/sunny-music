@@ -7,4 +7,5 @@
     <color name="mainColor">#D43433</color>
     <color name="lineColor">#c3c3c3</color>
     <color name="hightLightColor">#C80F1F</color>
+    <color name="itemColorH">#dee1e6</color>
 </resources>

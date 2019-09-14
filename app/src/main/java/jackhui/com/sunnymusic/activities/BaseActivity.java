@@ -1,5 +1,7 @@
 package jackhui.com.sunnymusic.activities;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
@@ -40,5 +42,14 @@ public class BaseActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+        mIvMe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BaseActivity.this, MeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }

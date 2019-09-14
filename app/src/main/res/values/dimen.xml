@@ -9,4 +9,5 @@
     <dimen name="button_text_size">15sp</dimen>
     <dimen name="btn_size">44dp</dimen>
     <dimen name="radius">5dp</dimen>
+    <dimen name="item_height">44dp</dimen>
 </resources>

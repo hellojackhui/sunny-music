@@ -5,11 +5,17 @@ import android.os.Bundle;
 
 import jackhui.com.sunnymusic.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initView();
     }
+
+    private void initView() {
+        initNavBar(false, "sunny music", true);
+    }
+
 }
