@@ -5,16 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context=".activities.LoginActivity">
 
     <include layout="@layout/nav_bar"/>
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:src="@mipmap/logo"
         android:contentDescription="@string/app_name"
         android:layout_marginTop="@dimen/marginSize"
         android:layout_gravity="center_horizontal"/>
+
+    <jackhui.com.sunnymusic.views.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/phone"
+        app:input_hint="手机号"
+        app:is_password="false"/>
+    
+    <View style="@style/line"/>
+
+    <jackhui.com.sunnymusic.views.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/lock"
+        app:input_hint="密码"
+        app:is_password="true"/>
+
+    <View style="@style/line"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即注册"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="@color/mainColor"
+        android:onClick="onRegisterClick"
+        />
+
+    <Button
+        style="@style/commitBtn"
+        android:text="登  录"
+        android:onClick="onCommitClick"
+        android:layout_marginTop="@dimen/marginSize"/>
 
 </LinearLayout>

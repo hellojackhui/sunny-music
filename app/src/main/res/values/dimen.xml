@@ -3,5 +3,10 @@
     <dimen name="navBarHeight">56dp</dimen>
     <dimen name="marginSize">16dp</dimen>
     <dimen name="navBarTitleSize">22sp</dimen>
-
+    <dimen name="titleSize">18sp</dimen>
+    <dimen name="inputViewHeight">50dp</dimen>
+    <dimen name="icon_size">30dp</dimen>
+    <dimen name="button_text_size">15sp</dimen>
+    <dimen name="btn_size">44dp</dimen>
+    <dimen name="radius">5dp</dimen>
 </resources>

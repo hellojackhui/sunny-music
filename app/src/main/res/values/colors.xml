@@ -3,6 +3,8 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-
+    <color name="colorHint">#dddddd</color>
     <color name="mainColor">#D43433</color>
+    <color name="lineColor">#c3c3c3</color>
+    <color name="hightLightColor">#C80F1F</color>
 </resources>
