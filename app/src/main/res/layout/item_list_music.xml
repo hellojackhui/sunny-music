@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/user"
+            android:text="@string/music_title"
             android:textColor="@color/titleColor"
             android:textSize="@dimen/titleSize"
             android:textStyle="bold"/>
@@ -32,7 +32,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/user"
+            android:text="@string/music_artist"
             android:textColor="@color/infoColor"
             android:textSize="@dimen/titleSize"
             />

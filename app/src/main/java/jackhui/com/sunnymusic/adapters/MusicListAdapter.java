@@ -1,6 +1,7 @@
 package jackhui.com.sunnymusic.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.widget.LinearLayout;
 import com.bumptech.glide.Glide;
 
 import jackhui.com.sunnymusic.R;
+import jackhui.com.sunnymusic.activities.PlayMusicActivity;
 
 public class MusicListAdapter extends RecyclerView.Adapter<MusicListAdapter.ViewHolder> {
 
@@ -33,12 +35,18 @@ public class MusicListAdapter extends RecyclerView.Adapter<MusicListAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+    public void onBindViewHolder(@NonNull final ViewHolder viewHolder, int i) {
         setReceiverViewHeight();
         Glide.with(mContext)
                 .load("http://pic1.win4000.com/wallpaper/2019-09-12/5d79df1739e7d.jpg")
                 .into(viewHolder.ivIcon);
-
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, PlayMusicActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -65,10 +73,11 @@ public class MusicListAdapter extends RecyclerView.Adapter<MusicListAdapter.View
     class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView ivIcon;
-
+        View itemView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            this.itemView = itemView;
             ivIcon = itemView.findViewById(R.id.iv_icon);
         }
     }
