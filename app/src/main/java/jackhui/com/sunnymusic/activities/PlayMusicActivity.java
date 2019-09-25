@@ -34,7 +34,7 @@ public class PlayMusicActivity extends BaseActivity {
                 .into(mIvBg);
         mPlayView = fd(R.id.play_music_view);
         mPlayView.setMusicIcon("http://pic1.win4000.com/wallpaper/c/53cdd1ec00d80.jpg");
-
+        mPlayView.playMusic();
     }
 
     public void onBackClick(View view) {
